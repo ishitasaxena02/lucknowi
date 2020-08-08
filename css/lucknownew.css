@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+html, body {
+  	overflow-x: hidden;
+  	width: 100%;
+  	font-family: "Lato", sans-serif;
+  	font-size: 16px;
+}
+header, footer {
+  	height: 10vh;
+	background-color: #9A7D0A;
+	font-family: "Gugi", cursive;
+}
+header nav {
+	display: flex;
+  	flex-direction: row;
+  	justify-content: flex-start;
+  	flex-flow: nowrap;
+  	align-items: center;
+  	padding: 20px 50px 20px 0;
+  	position: fixed;
+  	z-index: 4;
+  	background-color: #5C2018;
+  	width: 100%;
+}
+nav a {
+	padding: 0 40px 0 50px;
+	color: #FFFFFF;
+  	text-decoration: none;
+  	font-size: 1.5vw;
+	margin-top: -5px;
+	width: 25%;
+}
+nav .active{
+	color: #4285F4;
+}
+nav a:hover {
+	color: #D4A59A;
+  	opacity: 0.8;
+}
+.welcome {
+	background: url("../images/headerbg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	min-width: 100vh;
+	min-height: 40vh;
+  	color: #000000;
+}
+.welcome .weltext{
+	text-align: center;
+	vertical-align: middle;
+}
+.welcome .weltext h1 {
+    font-size: 6vw;
+    font-weight: 700;
+    padding: 10px 0 0 0;
+    font-family: "Gugi", cursive;
+}
+.welcome .weltext h1 span {
+    color: #5C2018;
+	font-size: 5vw
+}
+.welcome .weltext p {
+	font-size: 4vw;
+	font-style: italic;
+}
+.city , .about, .abt, .mage, .me{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	color: #D4A59A;
+	background-color: #5C2018;
+	padding: 2%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	border-color: #9D8D8F;
+	border: solid 2px;
+	border-radius: 10px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.city h2, .about h2, .abt h2, .mage h2, .me h2{
+	text-align: center;
+	color: #4285F4;
+	font-style: Luminari, fantasy;
+	font-weight: 150%;
+	line-height: 200%;
+	font-size: 250%;
+	padding-bottom: 1%;
+	margin-bottom: 1%
+	font-family: Georgia, serif;
+}
+.city p, .about p, .abt p, .me p{
+	padding: 2%;
+	margin: 2%;
+}
+.button {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #F3E0DC;
+    color: #333333;
+    line-height: 150%; 
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+.contact{
+	display: block;
+	width: 100%;
+	height: 40%;
+	margin: 0 auto;
+	color: #D4AF9A;
+	background-color: #203F73;
+	border-style: double;
+	padding: 5%;
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+	clear: both;
+}
+.contact h2{
+	color: #FFFFFF;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: 150%;
+	line-height: 200%;
+	font-size: 250%;
+	margin-bottom: 2%;
+}
+.contact p span{
+	color: #FAED26;
+}
+footer{
+	margin-top: 1%;
+	padding-top: 2%;
+	background-color: #D4AF9A;
+	color: #BC4639;
+	clear: both;
+}
+.cite, .mage2{
+	display: block;
+	width: 50vh;
+	margin: 0 auto;
+	border-radius: 50%;
+	border-style: double;
+	transition: width 2s, height 2s, transform 2s;
+}
+.cite:hover, .mage2:hover{
+	width: 100vh;
+	margin: 0 auto;
+	transform: rotate(360deg);
+}
+.mage a img{
+	width: 100vh;
+	border-color: #000000;
+}
+.mage a img:hover, .mage2:hover{
+	opacity: 0.5;
+}
+.mapouter{
+	margin: 0 auto;
+	margin-top: 1%;
+}
+@media screen and (max-width: 700px){
+	header{
+		width: 100%;
+		display: block;
+		float: left;
+	}
+	header nav{
+		width: 100%;
+		display: block;
+		position: static;
+	}
+	nav a{
+		display: block;
+		width: 100%;
+		margin: 1%;
+		padding: 1%;
+		border: 1%;
+		text-align: center;
+	}
+	.welcome{
+		clear: both;
+	}
+}
+@media screen and (min-width: 700px){
+	.cite, .mage2{
+		display: inline-block;
+		width: 15%;
+		float: left;
+		margin: 0 auto;
+		margin-left: 5%;
+	}
+	.abt, .me{
+		display: inline-block;
+		width: 40%;
+		float: right;
+		margin-right: none;
+	}
+	.about, .city{
+		display: inline-block;
+		width: 45%;
+		margin: 0 auto;
+	}
+}
